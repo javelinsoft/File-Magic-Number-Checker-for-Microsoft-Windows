@@ -1,4 +1,4 @@
-# File Type Checker for Microsoft Windows
+# File Magic Type Checker for Microsoft Windows
 
 ## Overview
 This application consists of two components:
