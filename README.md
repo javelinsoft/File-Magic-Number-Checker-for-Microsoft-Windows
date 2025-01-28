@@ -14,7 +14,7 @@ This application consists of two components:
 ### Purpose:
 The File Magic Type Checker allows users to get the MIME type and detailed magic information of a file.
 
-## 2. **Installer: File Magic Type Checker**
+## 2. **Installer**
 
 ### Purpose:
 The installer allows you to install or uninstall the File Magic Type Checker and its context menu integration.
