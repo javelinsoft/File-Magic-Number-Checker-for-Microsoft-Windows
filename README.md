@@ -5,7 +5,7 @@
 This application consists of two components:
 
 1. **File Magic Type Checker** (`file.exe`): A tool for checking the MIME type and detailed magic information of a file.
-2. **Installer** (`file_installer.exe`): A utility to install or uninstall the File Magic Type Checker and its context menu.
+2. **Installer** (`install_file_magic_type_checker.exe`): A utility to install or uninstall the File Magic Type Checker and its context menu.
 
 ---
 
