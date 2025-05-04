@@ -8,7 +8,7 @@ import winreg
 import subprocess
 
 # Constants
-INSTALLATION_FOLDER_NAME = "file magic type checker"
+INSTALLATION_FOLDER_NAME = "file magic number checker"
 DEFAULT_INSTALL_PATH = os.path.join(os.getenv("APPDATA"), INSTALLATION_FOLDER_NAME)
 DATA_FOLDER = "data"  # Folder where file.exe and file.ico are located
 ICON_PATH = os.path.join(DATA_FOLDER, "file.ico")  # Path to the installer icon
@@ -30,7 +30,7 @@ def create_context_menu(install_path):
     try:
         # Create the registry key for the context menu
         key = winreg.CreateKey(winreg.HKEY_CLASSES_ROOT, r"*\\shell\\Check file magic type")
-        winreg.SetValue(key, "", winreg.REG_SZ, "Check file magic type")
+        winreg.SetValue(key, "", winreg.REG_SZ, "Check file magic number")
 
         # Add the icon value, referencing the copied icon in the installation folder
         icon_path = os.path.join(install_path, "file.ico")
@@ -50,8 +50,8 @@ def create_context_menu(install_path):
 # Remove the context menu
 def remove_context_menu():
     try:
-        # Use the reg.exe command to delete the entire 'Check file magic type' subkey
-        command = r'reg delete "HKCR\*\shell\Check file magic type" /f'
+        # Use the reg.exe command to delete the entire 'Check file magic number' subkey
+        command = r'reg delete "HKCR\*\shell\Check file magic number" /f'
         result = subprocess.run(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
         
         if result.returncode == 0:
@@ -131,7 +131,7 @@ if __name__ == "__main__":
 
     # Create the main window
     root = tk.Tk()
-    root.title("Install File Magic Type Checker")
+    root.title("Install File Magic Number Checker")
 
     # Set the window icon if file.ico exists
     if os.path.exists(ICON_PATH):
