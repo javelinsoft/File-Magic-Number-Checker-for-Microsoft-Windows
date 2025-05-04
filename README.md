@@ -1,4 +1,4 @@
-# File Magic Type Number for Microsoft Windows
+# File Magic Number Checker for Microsoft Windows
 ![ScreenShot](https://github.com/user-attachments/assets/41a459d2-8fb0-4aa8-9ff8-2f069e7c5bac)
 
 ## Overview
